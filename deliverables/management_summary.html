@@ -1,113 +1,111 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><title>EuroFoods — Management Summary</title>
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8">
 <style>
 @page{size:A4;margin:13mm 14mm}
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'Segoe UI',Helvetica,Arial,sans-serif;color:#1a2233;font-size:9.6px;line-height:1.42}
-.head{display:flex;justify-content:space-between;align-items:flex-end;border-bottom:3px solid #0891B2;padding-bottom:7px;margin-bottom:11px}
-.logo{display:flex;align-items:center;gap:9px}
-.mark{width:34px;height:34px;border-radius:8px;background:linear-gradient(135deg,#0891B2,#06b6d4);color:#fff;display:grid;place-items:center;font-weight:800;font-size:15px}
-h1{font-size:17px;color:#0B1220;letter-spacing:-.3px}
-.sub{color:#5b6b85;font-size:9px;margin-top:1px}
-.tag{text-align:right;font-size:8.5px;color:#5b6b85;line-height:1.5}
-.tag b{color:#0891B2}
-.exec{background:#f0fafd;border:1px solid #cdeaf2;border-left:4px solid #0891B2;border-radius:7px;padding:9px 11px;margin-bottom:11px}
-.exec h2{font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:#0891B2;margin-bottom:4px}
-.exec p{font-size:10px;line-height:1.5}
-.kpis{display:grid;grid-template-columns:repeat(5,1fr);gap:7px;margin-bottom:12px}
-.kpi{border:1px solid #e2e8f2;border-radius:7px;padding:7px 9px;border-top:3px solid #0891B2}
-.kpi.g{border-top-color:#10B981}.kpi.a{border-top-color:#F59E0B}.kpi.r{border-top-color:#EF4444}
-.kpi .l{font-size:7.5px;letter-spacing:.4px;text-transform:uppercase;color:#6b7a93;font-weight:700}
-.kpi .v{font-size:16px;font-weight:800;color:#0B1220;margin-top:2px;letter-spacing:-.5px}
-.kpi .m{font-size:7.8px;color:#6b7a93;margin-top:1px}
-.cols{display:grid;grid-template-columns:1.32fr 1fr;gap:13px}
-h3{font-size:10.5px;color:#0B1220;border-bottom:1.5px solid #e2e8f2;padding-bottom:3px;margin-bottom:6px;display:flex;align-items:center;gap:6px}
-h3 .num{background:#0891B2;color:#fff;width:15px;height:15px;border-radius:50%;display:inline-grid;place-items:center;font-size:8.5px;font-weight:800}
-.find{margin-bottom:8px}
-.find h4{font-size:9.6px;color:#0e2433;margin-bottom:2px}
-.find p{font-size:8.9px;color:#3a485f;line-height:1.46}
-.find b{color:#0B1220}
-.rec{background:#f7fbf9;border:1px solid #d6efe2;border-radius:6px;padding:6px 8px;margin-bottom:6px}
-.rec h4{font-size:9.4px;color:#0a7a52;display:flex;justify-content:space-between}
-.rec .imp{color:#10B981;font-weight:800;font-size:8.5px}
-.rec p{font-size:8.6px;color:#3a485f;margin-top:2px;line-height:1.44}
-.risk{background:#fffaf2;border:1px solid #f6e2bf;border-radius:6px;padding:7px 9px;margin-top:3px}
-.risk h3{border:0;margin-bottom:4px;color:#b4730a}
-.risk li{font-size:8.5px;color:#4a4233;margin-bottom:3px;list-style:none;padding-left:12px;position:relative;line-height:1.42}
-.risk li:before{content:"▴";position:absolute;left:0;color:#F59E0B}
-.foot{margin-top:10px;border-top:1px solid #e2e8f2;padding-top:5px;font-size:7.6px;color:#8693a8;text-align:center}
- table{width:100%;border-collapse:collapse;font-size:8.2px;margin-top:3px}
-td,th{padding:2.5px 4px;border-bottom:1px solid #eef2f8;text-align:right}
-th{color:#6b7a93;text-transform:uppercase;font-size:7px;letter-spacing:.3px}
-td:first-child,th:first-child{text-align:left}
-.pos{color:#10B981;font-weight:700}.neg{color:#EF4444;font-weight:700}
-</style></head><body>
+body{font-family:'Inter','Helvetica Neue',Arial,sans-serif;color:#1A1625;font-size:9.6px;line-height:1.45;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.head{display:flex;align-items:center;gap:13px;border-bottom:2.5px solid;padding-bottom:11px;margin-bottom:13px;
+  border-image:linear-gradient(90deg,#FF4D8D,#FF7A45) 1}
+.logo{width:42px;height:42px;border-radius:11px;background:linear-gradient(135deg,#FF4D8D,#FF7A45);color:#fff;
+  display:flex;align-items:center;justify-content:center;font-weight:800;font-size:17px;flex-shrink:0}
+.head h1{font-size:19px;font-weight:800;letter-spacing:-.4px}
+.head .meta{font-size:8.4px;color:#6B6478;letter-spacing:.4px;text-transform:uppercase;margin-top:2px;font-weight:600}
+.head .right{margin-left:auto;text-align:right;font-size:8.2px;color:#6B6478;line-height:1.5}
+.head .right b{color:#06B6D4}
+
+.kstrip{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin-bottom:13px}
+.k{background:#FBFAF9;border:1px solid #ECE9E4;border-radius:10px;padding:8px 10px;position:relative;overflow:hidden}
+.k::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3.5px}
+.k.c1::before{background:#06B6D4}.k.c2::before{background:#16B364}.k.c3::before{background:#FF9E2C}
+.k.c4::before{background:#F0384B}.k.c5::before{background:#7C5CFF}
+.k .lab{font-size:7px;letter-spacing:.5px;text-transform:uppercase;color:#6B6478;font-weight:700}
+.k .val{font-size:16px;font-weight:800;letter-spacing:-.5px;margin-top:2px}
+.k .d{font-size:7.4px;color:#6B6478;margin-top:1px}
+.pos{color:#0B7A45}.neg{color:#B91C32}
+
+h2{font-size:10.5px;font-weight:800;text-transform:uppercase;letter-spacing:.7px;margin:0 0 6px;
+  display:flex;align-items:center;gap:7px}
+h2::before{content:"";width:13px;height:13px;border-radius:4px;background:linear-gradient(135deg,#06B6D4,#22D3EE);display:inline-block}
+.exec{background:#FBFAF9;border:1px solid #ECE9E4;border-left:3px solid #06B6D4;border-radius:0 9px 9px 0;
+  padding:9px 12px;margin-bottom:12px;font-size:10px;line-height:1.55}
+.exec b{color:#0E7490}
+
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:13px;margin-bottom:11px}
+.find{margin-bottom:8px;padding-left:23px;position:relative;min-height:17px}
+.find .n{position:absolute;left:0;top:0;width:17px;height:17px;border-radius:6px;color:#fff;font-weight:800;
+  font-size:9px;display:flex;align-items:center;justify-content:center}
+.find:nth-child(2) .n{background:#FF4D8D}.find:nth-child(3) .n{background:#06B6D4}.find:nth-child(4) .n{background:#7C5CFF}
+.find h3{font-size:9.4px;font-weight:800;margin-bottom:1px}
+.find p{font-size:8.8px;color:#3f3a4c;line-height:1.42}
+.find b{color:#1A1625}
+
+.rec{background:#fff;border:1px solid #ECE9E4;border-radius:9px;padding:8px 10px;margin-bottom:7px;box-shadow:0 1px 2px rgba(26,22,37,.04)}
+.rec .top{display:flex;align-items:center;gap:7px;margin-bottom:2px}
+.rec .tag{font-size:7px;font-weight:800;color:#fff;padding:2px 7px;border-radius:5px;letter-spacing:.4px}
+.rec:nth-child(2) .tag{background:#16B364}.rec:nth-child(3) .tag{background:#06B6D4}.rec:nth-child(4) .tag{background:#FF9E2C}
+.rec h3{font-size:9.2px;font-weight:800}
+.rec p{font-size:8.6px;color:#3f3a4c;line-height:1.4}
+.rec .imp{font-size:8.4px;font-weight:700;color:#0B7A45;margin-top:2px}
+.rec .imp.warn{color:#0E7490}
+
+.risk{background:#FFF7F4;border:1px solid #FBD9C9;border-radius:9px;padding:9px 12px}
+.risk ul{margin:0;padding-left:14px}
+.risk li{font-size:8.5px;color:#5a4a44;line-height:1.45;margin-bottom:2.5px}
+.risk li b{color:#993C1D}
+.foot{margin-top:11px;border-top:1px solid #ECE9E4;padding-top:7px;display:flex;justify-content:space-between;
+  font-size:7.4px;color:#9a93a6}
+</style></head>
+<body>
 <div class="head">
-  <div class="logo"><div class="mark">€F</div>
-    <div><h1>EuroFoods S.A. — Management Summary</h1>
-    <div class="sub">FY2024 Performance Review · Prepared by FP&A · Data as of December 2024</div></div></div>
-  <div class="tag">Scope: <b>25,200</b> transactions<br>3 countries · 20 SKUs · 4 channels<br>FY2023–FY2024 · Currency <b>EUR</b></div>
+  <div class="logo">€F</div>
+  <div><h1>EuroFoods S.A. — Management Summary</h1>
+    <div class="meta">FY2024 Performance Review · FP&A Analysis · Data for FP&A 2026</div></div>
+  <div class="right">Prepared by <b>FP&A Analytics</b><br>Data as of: December 2024<br>Currency: EUR</div>
 </div>
 
+<div class="kstrip">
+  <div class="k c1"><div class="lab">Revenue 2024</div><div class="val">€2.36M</div><div class="d pos">+5.4% vs 2023</div></div>
+  <div class="k c2"><div class="lab">Gross Margin</div><div class="val">38.7%</div><div class="d">flat vs 38.8%</div></div>
+  <div class="k c3"><div class="lab">Budget Variance</div><div class="val neg">−4.6%</div><div class="d neg">−€115k vs plan</div></div>
+  <div class="k c4"><div class="lab">Q3 2024 YoY</div><div class="val pos">+11.9%</div><div class="d">summer surge</div></div>
+  <div class="k c5"><div class="lab">2025 to hit €2.5M</div><div class="val">+5.8%</div><div class="d">vs +5.4% run-rate</div></div>
+</div>
+
+<h2>Executive summary</h2>
 <div class="exec">
-  <h2>Executive Summary</h2>
-  <p>EuroFoods delivered <b>€2.36M revenue in 2024, up +5.4%</b> on 2023, with gross margin steady at
-  <b>38.7%</b> — a healthy, profitable year. However, the company finished <b>−4.6% (−€114.6k) below budget</b>,
-  and the miss was <b>systematic</b>: every country and every category landed ~5% short, driven almost entirely
-  by <b>volume</b> (−56.8k units) rather than price. The headline issue is not performance — it is an
-  <b>over-optimistic plan</b>, compounded by an <b>underperforming Online channel</b> that grew slower than the stores.</p>
-</div>
-
-<div class="kpis">
-  <div class="kpi"><div class="l">Revenue 2024</div><div class="v">€2.36M</div><div class="m">+5.4% YoY</div></div>
-  <div class="kpi g"><div class="l">Gross Margin</div><div class="v">38.7%</div><div class="m">flat vs 2023</div></div>
-  <div class="kpi r"><div class="l">Budget Variance</div><div class="v">−4.6%</div><div class="m">−€114.6k</div></div>
-  <div class="kpi a"><div class="l">Volume Gap</div><div class="v">−4.7%</div><div class="m">vs plan, price ≈ 0</div></div>
-  <div class="kpi"><div class="l">Q3 2024 Surge</div><div class="v">+11.9%</div><div class="m">strongest quarter</div></div>
+EuroFoods grew revenue <b>+5.4% to €2.36M in 2024</b> (+€122k) while holding gross margin essentially flat at <b>38.7%</b> — healthy, broad-based growth led by a <b>+11.9% Q3 surge</b>. However, the company finished <b>4.6% (−€115k) below budget</b>, and critically the miss was <b>uniform across every country and category</b>. A price-volume bridge shows the entire shortfall is <b>volume</b> (−€226k over two years) with price/mix at virtually zero — i.e. the plan over-assumed units, not euros. The story is not weak execution but an over-optimistic top-down budget against a fundamentally sound, profitable business.
 </div>
 
 <div class="cols">
   <div>
-    <h3><span class="num">!</span> Top 3 Findings</h3>
-    <div class="find"><h4>1 · The budget miss is volume, not price — and it is everywhere</h4>
-      <p>A price–volume bridge splits the −€226.5k two-year gap into <b>−€226.2k volume / −€0.3k price</b>.
-      Actuals sit ~5% under plan in <b>all 3 countries and all 4 categories</b> (France −5.0%, Germany −5.0%,
-      UK −5.0%). Uniformity that complete signals a <b>top-down plan set too high</b>, not a local execution failure.</p></div>
-    <div class="find"><h4>2 · Online is the laggard, not the leader</h4>
-      <p>Against the usual e-commerce narrative, <b>Online grew only +4.9%</b> while brick-and-mortar grew
-      <b>+6.0%</b>. Supermarket (+5.9%) is the real growth engine. Online is now <b>22.6%</b> of revenue but is
-      <b>diluting</b> the company growth rate.</p></div>
-    <div class="find"><h4>3 · Frozen Food is the structural margin drag</h4>
-      <p>Group margin is healthy, but <b>all 5 Frozen Food SKUs fall below their 35% target</b> (category ≈ 34.9%).
-      This is a <b>category-wide sourcing/pricing issue</b>, not weak individual products — so the answer is
-      <b>cost &amp; price action, not discontinuation</b>. Beverages is by far the most seasonal line (July index 136 vs February 74).</p></div>
-    <table>
-      <tr><th>Country</th><th>Revenue</th><th>Margin %</th><th>vs Budget</th></tr>
-      <tr><td>France</td><td>€1.82M</td><td>38.7%</td><td class="neg">−5.0%</td></tr>
-      <tr><td>Germany</td><td>€1.54M</td><td>38.8%</td><td class="neg">−5.0%</td></tr>
-      <tr><td>UK</td><td>€1.24M</td><td>38.7%</td><td class="neg">−5.0%</td></tr>
-    </table>
+    <h2>Top 3 findings</h2>
+    <div class="find"><div class="n">1</div><h3>The budget gap is volume, not price</h3>
+      <p>Actuals are ~5% below plan in <b>all 3 countries and all 4 categories</b> (variance band −5.0% to −3.9%). The bridge attributes <b>−€226k to volume, ≈€0 to price</b>. This points to a planning-assumption error, not a commercial failure.</p></div>
+    <div class="find"><div class="n">2</div><h3>Online is the slowest channel, not the fastest</h3>
+      <p>Against the usual e-commerce narrative, <b>Online grew only +4.9%</b> vs brick-and-mortar at <b>+6.0%</b>. <b>Supermarket (+5.9%)</b> is the real engine. Online — 22.6% of revenue — is underperforming its potential.</p></div>
+    <div class="find"><div class="n">3</div><h3>Frozen Food is the structural margin drag</h3>
+      <p>Group margin is steady, but <b>all 5 Frozen Food SKUs sit below their 35% target</b>. It is the <b>largest category by revenue (€1.42M)</b> yet the lowest-margin band — a category-wide sourcing issue, not weak individual products.</p></div>
   </div>
   <div>
-    <h3><span class="num">→</span> Recommendations</h3>
-    <div class="rec"><h4>Rebase the 2025 budget on actuals <span class="imp">+€115k credibility</span></h4>
-      <p>Reset targets to a realistic <b>+5–6% volume</b> trajectory off 2024 actuals. This alone converts a
-      chronic −5% "miss" into an achievable plan and restores forecast trust.</p></div>
-    <div class="rec"><h4>Fix or re-cost the Online channel <span class="imp">+€50–80k</span></h4>
-      <p>Online's +4.9% lags the +6.0% stores. Audit pricing, fulfilment cost and assortment; closing the gap to
-      the store rate adds <b>~€6k</b>/yr directly, and a targeted <b>+20% Online push offsets a −10% Convenience
-      decline for a net +€68k (+2.9%)</b> — the most efficient growth lever available.</p></div>
-    <div class="rec"><h4>Attack Frozen Food cost-to-serve <span class="imp">+€15–20k margin</span></h4>
-      <p>Renegotiate frozen supply or lift price ~1–2% to pull the category back above its 35% target. A 1pp
-      margin recovery on €1.42M frozen revenue ≈ <b>€14k</b>, with no volume risk if paired with seasonality-aware promo.</p></div>
-    <div class="risk">
-      <h3>Risks &amp; Assumptions</h3>
-      <ul>
-        <li><b>Flat-price assumption:</b> the scenario holds 2024 prices; input-cost inflation could erode the frozen margin gains.</li>
-        <li><b>FX exposure:</b> UK is <b>27%</b> of revenue; EUR/GBP swung 0.831–0.883 (~6%) — translation risk not in these EUR figures.</li>
-        <li><b>Linear forecast:</b> the projection assumes 2024 seasonality repeats; a demand shock or lost key account (top customers are concentrated) would break it.</li>
-      </ul>
-    </div>
+    <h2>Recommendations</h2>
+    <div class="rec"><div class="top"><span class="tag">ACT NOW</span><h3>Re-baseline the 2025 budget</h3></div>
+      <p>Rebuild plan volumes on the actual run-rate, not the legacy +5% top-down assumption that missed every cell.</p>
+      <div class="imp">▲ Restores forecast credibility; removes the chronic ≈€115k/yr unfavorable variance</div></div>
+    <div class="rec"><div class="top"><span class="tag">GROW</span><h3>Push Supermarket &amp; rehabilitate Online</h3></div>
+      <p>Reinvest behind the fastest channel (Supermarket) and fix Online's underperformance with promo &amp; assortment.</p>
+      <div class="imp warn">▲ Online +20% nets <b>+€68k (+2.9%)</b> even after a −10% Convenience dip — covers the gap to €2.5M</div></div>
+    <div class="rec"><div class="top"><span class="tag">PROTECT</span><h3>Fix Frozen margin &amp; hedge GBP</h3></div>
+      <p>Renegotiate Frozen Food sourcing to reach the 35% target; hedge sterling on the 27%-of-revenue UK book.</p>
+      <div class="imp warn">▲ +2pp on €1.42M ≈ <b>+€28k GM</b>; caps a ~6% EUR/GBP translation swing</div></div>
   </div>
 </div>
-<div class="foot">EuroFoods S.A. · Confidential — Internal FP&A · All figures derived from the transaction-level dataset (25,200 rows) · Companion: 4-page interactive dashboard</div>
+
+<h2>Risks &amp; assumptions</h2>
+<div class="risk"><ul>
+  <li><b>Budget premise:</b> recommendations assume the uniform ~5% gap is planning optimism, not demand erosion. If volumes are structurally declining, rebaselining masks a real problem — monitor the volume trend monthly.</li>
+  <li><b>Scenario independence:</b> the Online +20% / Convenience −10% model treats segments as independent; real channel cannibalisation would reduce the +€68k net uplift.</li>
+  <li><b>Margin &amp; FX stability:</b> the €2.5M / forecast cases hold margin at 38.7% and assume no FX shock. EUR/GBP ranged 0.831–0.883 (~6%) over the period — a weaker pound directly compresses reported UK revenue (27% of the group).</li>
+</ul></div>
+
+<div class="foot"><span>EuroFoods S.A. · Confidential — Management use only</span><span>Source: 25,200 transactions, FY2023–FY2024 · Generated June 2026</span></div>
 </body></html>

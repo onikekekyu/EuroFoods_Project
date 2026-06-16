@@ -1,12 +1,13 @@
 /* ===== EuroFoods FP&A Command Center — engine ===== */
-const C = {teal:'#0891B2',amber:'#F59E0B',red:'#EF4444',green:'#10B981',
-  bev:'#22D3EE',fresh:'#34D399',dry:'#FBBF24',frozen:'#818CF8',
-  fr:'#60A5FA',de:'#FBBF24',uk:'#2DD4BF',grid:'#243352',mut:'#8FA3C4',txt:'#E8EEF8'};
+const C = {teal:'#06B6D4',cyan:'#06B6D4',pink:'#FF4D8D',orange:'#FF7A45',amber:'#FF9E2C',
+  violet:'#7C5CFF',red:'#F0384B',green:'#16B364',
+  bev:'#06B6D4',fresh:'#16B364',dry:'#FF9E2C',frozen:'#7C5CFF',
+  fr:'#FF4D8D',de:'#7C5CFF',uk:'#06B6D4',grid:'#ECE9E4',mut:'#6B6478',txt:'#1A1625',ink:'#1A1625'};
 const CAT_COL={'Beverages':C.bev,'Fresh Produce':C.fresh,'Dry Goods':C.dry,'Frozen Food':C.frozen};
 const CTRY_COL={'France':C.fr,'Germany':C.de,'UK':C.uk};
 const MONTHS=DATA.months;
 const fmtE=(n,d=0)=>'€'+Number(n).toLocaleString('en-US',{maximumFractionDigits:d,minimumFractionDigits:d});
-const fmtK=n=>{n=Number(n);if(Math.abs(n)>=1e6)return '€'+(n/1e6).toFixed(2)+'M';if(Math.abs(n)>=1e3)return '€'+(n/1e3).toFixed(0)+'k';return '€'+n.toFixed(0);};
+const fmtK=n=>{n=Number(n);const s=n<0?'-':'';n=Math.abs(n);if(n>=1e6)return s+'€'+(n/1e6).toFixed(2)+'M';if(n>=1e3)return s+'€'+(n/1e3).toFixed(0)+'k';return s+'€'+n.toFixed(0);};
 const fmtP=(n,d=1)=>(n>=0?'+':'')+ (n*100).toFixed(d)+'%';
 const pct=(n,d=1)=>(n*100).toFixed(d)+'%';
 
@@ -61,11 +62,11 @@ function mk(id,cfg){if(charts[id])charts[id].destroy();
   cfg.options=cfg.options||{};cfg.options.responsive=true;cfg.options.maintainAspectRatio=false;
   cfg.options.animation={duration:600,easing:'easeOutQuart'};
   charts[id]=new Chart(document.getElementById(id),cfg);}
-Chart.defaults.color=C.mut;Chart.defaults.font.family="'Segoe UI',system-ui,sans-serif";
+Chart.defaults.color=C.mut;Chart.defaults.font.family="'Inter','Segoe UI',system-ui,sans-serif";
 Chart.defaults.font.size=11.5;
-const gridO={grid:{color:'rgba(36,51,82,.55)'},ticks:{color:C.mut}};
-const noGrid={grid:{display:false},ticks:{color:C.mut}};
-const lgd=(pos='top')=>({display:true,position:pos,labels:{usePointStyle:true,pointStyle:'circle',boxWidth:8,padding:14,color:C.txt}});
+const gridO={grid:{color:'rgba(26,22,37,.07)'},border:{color:C.grid},ticks:{color:C.mut}};
+const noGrid={grid:{display:false},border:{color:C.grid},ticks:{color:C.mut}};
+const lgd=(pos='top')=>({display:true,position:pos,labels:{usePointStyle:true,pointStyle:'circle',boxWidth:8,padding:14,color:C.ink}});
 
 /* ===================== RENDER ===================== */
 function render(){syncChips();
@@ -129,7 +130,7 @@ function renderP1(){
   const act=ctry.map(c=>sum(fcube(r=>r.Country===c),'R'));
   const bud=ctry.map(c=>sum(fbud(r=>r.Country===c),'BR'));
   mk('c-country',{type:'bar',data:{labels:ctry,datasets:[
-    {label:'Actual',data:act,backgroundColor:C.teal,borderRadius:6,barPercentage:.62,categoryPercentage:.7},
+    {label:'Actual',data:act,backgroundColor:C.pink,borderRadius:6,barPercentage:.62,categoryPercentage:.7},
     {label:'Budget',data:bud,backgroundColor:C.amber,borderRadius:6,barPercentage:.62,categoryPercentage:.7}]},
     options:{plugins:{legend:lgd(),tooltip:{callbacks:{label:c=>c.dataset.label+': '+fmtK(c.raw)}}},
       scales:{x:noGrid,y:{...gridO,ticks:{color:C.mut,callback:v=>fmtK(v)}}}}});
@@ -138,14 +139,14 @@ function renderP1(){
   const segs=ALL.segment.filter(s=>inF(s,'segment'));
   const segv=segs.map(s=>sum(fcube(r=>r.Segment===s),'R'));
   mk('c-seg',{type:'doughnut',data:{labels:segs,datasets:[{data:segv,
-    backgroundColor:[C.teal,'#22D3EE',C.amber,C.frozen],borderColor:'#111A2E',borderWidth:3}]},
+    backgroundColor:[C.cyan,C.pink,C.amber,C.violet],borderColor:'#fff',borderWidth:3}]},
     options:{cutout:'62%',plugins:{legend:lgd('bottom'),tooltip:{callbacks:{label:c=>{
       const tot=segv.reduce((a,b)=>a+b,0);return c.label+': '+fmtK(c.raw)+' ('+pct(c.raw/tot)+')';}}}}}});
 
   // monthly trend 23 vs 24
   mk('c-trend',{type:'line',data:{labels:MONTHS,datasets:[
     {label:'2023',data:byMonth(2023),borderColor:C.mut,backgroundColor:'transparent',tension:.35,borderWidth:2,pointRadius:0,borderDash:[5,4]},
-    {label:'2024',data:byMonth(2024),borderColor:C.teal,backgroundColor:'rgba(8,145,178,.12)',fill:true,tension:.35,borderWidth:3,pointRadius:3,pointBackgroundColor:C.teal}]},
+    {label:'2024',data:byMonth(2024),borderColor:C.teal,backgroundColor:'rgba(6,182,212,.14)',fill:true,tension:.35,borderWidth:3,pointRadius:3,pointBackgroundColor:C.teal}]},
     options:{plugins:{legend:lgd(),tooltip:{callbacks:{label:c=>c.dataset.label+': '+fmtK(c.raw)}}},
       scales:{x:noGrid,y:{...gridO,ticks:{color:C.mut,callback:v=>fmtK(v)}}}}});
 
@@ -283,7 +284,7 @@ function renderP4(){
   const actualSeries=[...actual23,...actual24,null,null,null];
   const projSeries=[...Array(23).fill(null),actual24[11],...proj];
   mk('c-fc',{type:'line',data:{labels,datasets:[
-    {label:'Actual',data:actualSeries,borderColor:C.teal,backgroundColor:'rgba(8,145,178,.10)',fill:true,tension:.3,borderWidth:2.5,pointRadius:0},
+    {label:'Actual',data:actualSeries,borderColor:C.teal,backgroundColor:'rgba(6,182,212,.12)',fill:true,tension:.3,borderWidth:2.5,pointRadius:0},
     {label:'Projection',data:projSeries,borderColor:C.amber,borderDash:[6,4],tension:.3,borderWidth:2.5,pointRadius:3,pointBackgroundColor:C.amber}]},
     options:{plugins:{legend:lgd(),tooltip:{callbacks:{label:c=>c.raw==null?'':c.dataset.label+': '+fmtK(c.raw)}}},
       scales:{x:{...noGrid,ticks:{maxTicksLimit:9,color:C.mut}},y:{...gridO,ticks:{callback:v=>fmtK(v)}}}}});
@@ -311,7 +312,7 @@ function renderP4(){
     const col=sh>0?'#34D399':sh<0?'#F87171':C.mut;
     html+=`<tr><td><b>${s}</b></td><td>${fmtK(b)}</td><td style="color:${col}">${sh?(sh>0?'+':'')+(sh*100)+'%':'—'}</td>
       <td style="color:${col}">${d?fmtK(d):'—'}</td><td>${fmtK(b+d)}</td></tr>`;});
-  html+=`<tr style="border-top:2px solid var(--teal)"><td><b>NET</b></td><td><b>${fmtK(base)}</b></td><td></td>
+  html+=`<tr style="border-top:2px solid var(--cyan)"><td><b>NET</b></td><td><b>${fmtK(base)}</b></td><td></td>
     <td style="color:${net>=0?'#34D399':'#F87171'}"><b>${fmtK(net)}</b></td><td><b>${fmtK(base+net)}</b></td></tr>`;
   html+='</tbody></table>';
   html+=`<div class="insight" style="margin-top:12px"><div class="ico">⚖️</div><p>Net impact <b>${fmtK(net)}</b> (${fmtP(base?net/base:0)} of 2024 revenue). The Online uplift <b>more than offsets</b> the Convenience decline — but only because Online is the larger base. Worth doing, modest in size.</p></div>`;
