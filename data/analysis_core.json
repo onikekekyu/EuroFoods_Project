@@ -1,0 +1,1716 @@
+{
+ "totals": {
+  "rev": 4604417.899999999,
+  "cogs": 2820833.89,
+  "gm": 1783584.0100000002,
+  "margin": 0.38736362526954826,
+  "rev23": 2241376.35,
+  "rev24": 2363041.55,
+  "yoy": 0.05428146861637034,
+  "gm23": 868602.69,
+  "gm24": 914981.32,
+  "vol23": 561832.0,
+  "vol24": 594630.0,
+  "price23": 3.9894067087670337,
+  "price24": 3.97396961135496
+ },
+ "country": [
+  {
+   "Country": "France",
+   "Rev": 1817439.67,
+   "GM": 703323.27,
+   "Vol": 456897,
+   "Margin%": 38.7,
+   "RevShare%": 39.47,
+   "GMShare%": 39.43
+  },
+  {
+   "Country": "Germany",
+   "Rev": 1542887.57,
+   "GM": 598824.29,
+   "Vol": 387588,
+   "Margin%": 38.81,
+   "RevShare%": 33.51,
+   "GMShare%": 33.57
+  },
+  {
+   "Country": "UK",
+   "Rev": 1244090.66,
+   "GM": 481436.45,
+   "Vol": 311977,
+   "Margin%": 38.7,
+   "RevShare%": 27.02,
+   "GMShare%": 26.99
+  }
+ ],
+ "segment": [
+  {
+   "Segment": "Convenience",
+   "2023": 364461.39,
+   "2024": 384065.1,
+   "Growth%": 5.38,
+   "Share24%": 16.25
+  },
+  {
+   "Segment": "Hypermarket",
+   "2023": 618724.99,
+   "2024": 651484.04,
+   "Growth%": 5.29,
+   "Share24%": 27.57
+  },
+  {
+   "Segment": "Online",
+   "2023": 509282.23,
+   "2024": 534098.27,
+   "Growth%": 4.87,
+   "Share24%": 22.6
+  },
+  {
+   "Segment": "Supermarket",
+   "2023": 748907.74,
+   "2024": 793394.14,
+   "Growth%": 5.94,
+   "Share24%": 33.58
+  }
+ ],
+ "products": [
+  {
+   "Category": "Beverages",
+   "SKU": "BEV-001",
+   "Product": "Premium Orange Juice 1L",
+   "Rev": 187645.23,
+   "GM": 78383.25,
+   "Vol": 58706,
+   "Margin%": 41.77,
+   "Target": 42,
+   "Gap": -0.23
+  },
+  {
+   "Category": "Beverages",
+   "SKU": "BEV-002",
+   "Product": "Sparkling Water 500ml",
+   "Rev": 85829.87,
+   "GM": 36122.91,
+   "Vol": 57124,
+   "Margin%": 42.09,
+   "Target": 42,
+   "Gap": 0.09
+  },
+  {
+   "Category": "Beverages",
+   "SKU": "BEV-003",
+   "Product": "Craft Lemonade 330ml",
+   "Rev": 162912.14,
+   "GM": 68995.22,
+   "Vol": 58001,
+   "Margin%": 42.35,
+   "Target": 42,
+   "Gap": 0.35
+  },
+  {
+   "Category": "Beverages",
+   "SKU": "BEV-004",
+   "Product": "Organic Apple Juice 750ml",
+   "Rev": 237492.82,
+   "GM": 99504.14,
+   "Vol": 57949,
+   "Margin%": 41.9,
+   "Target": 42,
+   "Gap": -0.1
+  },
+  {
+   "Category": "Beverages",
+   "SKU": "BEV-005",
+   "Product": "Iced Tea Peach 500ml",
+   "Rev": 128320.79,
+   "GM": 53631.59,
+   "Vol": 58381,
+   "Margin%": 41.79,
+   "Target": 42,
+   "Gap": -0.21
+  },
+  {
+   "Category": "Dry Goods",
+   "SKU": "DRY-001",
+   "Product": "Whole Wheat Pasta 500g",
+   "Rev": 101843.84,
+   "GM": 48667.65,
+   "Vol": 56514,
+   "Margin%": 47.79,
+   "Target": 48,
+   "Gap": -0.21
+  },
+  {
+   "Category": "Dry Goods",
+   "SKU": "DRY-002",
+   "Product": "Extra Virgin Olive Oil 750ml",
+   "Rev": 480144.94,
+   "GM": 230790.16,
+   "Vol": 56435,
+   "Margin%": 48.07,
+   "Target": 48,
+   "Gap": 0.07
+  },
+  {
+   "Category": "Dry Goods",
+   "SKU": "DRY-003",
+   "Product": "Basmati Rice 1kg",
+   "Rev": 185274.01,
+   "GM": 89179.91,
+   "Vol": 57877,
+   "Margin%": 48.13,
+   "Target": 48,
+   "Gap": 0.13
+  },
+  {
+   "Category": "Dry Goods",
+   "SKU": "DRY-004",
+   "Product": "Organic Granola 500g",
+   "Rev": 317058.69,
+   "GM": 152009.78,
+   "Vol": 57684,
+   "Margin%": 47.94,
+   "Target": 48,
+   "Gap": -0.06
+  },
+  {
+   "Category": "Dry Goods",
+   "SKU": "DRY-005",
+   "Product": "Dark Chocolate 200g",
+   "Rev": 228567.46,
+   "GM": 109415.62,
+   "Vol": 58629,
+   "Margin%": 47.87,
+   "Target": 48,
+   "Gap": -0.13
+  },
+  {
+   "Category": "Fresh Produce",
+   "SKU": "FRE-001",
+   "Product": "Organic Mixed Salad 200g",
+   "Rev": 197556.38,
+   "GM": 59484.53,
+   "Vol": 56376,
+   "Margin%": 30.11,
+   "Target": 30,
+   "Gap": 0.11
+  },
+  {
+   "Category": "Fresh Produce",
+   "SKU": "FRE-002",
+   "Product": "Cherry Tomatoes 250g",
+   "Rev": 164789.25,
+   "GM": 50203.93,
+   "Vol": 56541,
+   "Margin%": 30.47,
+   "Target": 30,
+   "Gap": 0.47
+  },
+  {
+   "Category": "Fresh Produce",
+   "SKU": "FRE-003",
+   "Product": "Avocados Pack of 3",
+   "Rev": 252321.17,
+   "GM": 75335.2,
+   "Vol": 56112,
+   "Margin%": 29.86,
+   "Target": 30,
+   "Gap": -0.14
+  },
+  {
+   "Category": "Fresh Produce",
+   "SKU": "FRE-004",
+   "Product": "Strawberries 400g",
+   "Rev": 296397.59,
+   "GM": 89069.83,
+   "Vol": 57044,
+   "Margin%": 30.05,
+   "Target": 30,
+   "Gap": 0.05
+  },
+  {
+   "Category": "Fresh Produce",
+   "SKU": "FRE-005",
+   "Product": "Baby Spinach 150g",
+   "Rev": 160601.92,
+   "GM": 48301.3,
+   "Vol": 57369,
+   "Margin%": 30.08,
+   "Target": 30,
+   "Gap": 0.08
+  },
+  {
+   "Category": "Frozen Food",
+   "SKU": "FRO-001",
+   "Product": "Mixed Vegetables 1kg",
+   "Rev": 209080.51,
+   "GM": 72974.1,
+   "Vol": 59705,
+   "Margin%": 34.9,
+   "Target": 35,
+   "Gap": -0.1
+  },
+  {
+   "Category": "Frozen Food",
+   "SKU": "FRO-002",
+   "Product": "Vanilla Ice Cream 500ml",
+   "Rev": 283880.19,
+   "GM": 98877.59,
+   "Vol": 59224,
+   "Margin%": 34.83,
+   "Target": 35,
+   "Gap": -0.17
+  },
+  {
+   "Category": "Frozen Food",
+   "SKU": "FRO-003",
+   "Product": "Frozen Pizza Margherita",
+   "Rev": 323669.01,
+   "GM": 112334.92,
+   "Vol": 59048,
+   "Margin%": 34.71,
+   "Target": 35,
+   "Gap": -0.29
+  },
+  {
+   "Category": "Frozen Food",
+   "SKU": "FRO-004",
+   "Product": "Fish Fingers Pack of 10",
+   "Rev": 246492.16,
+   "GM": 86186.05,
+   "Vol": 58755,
+   "Margin%": 34.97,
+   "Target": 35,
+   "Gap": -0.03
+  },
+  {
+   "Category": "Frozen Food",
+   "SKU": "FRO-005",
+   "Product": "Frozen Berries Mix 500g",
+   "Rev": 354539.93,
+   "GM": 124116.33,
+   "Vol": 58988,
+   "Margin%": 35.01,
+   "Target": 35,
+   "Gap": 0.01
+  }
+ ],
+ "below_target": [
+  {
+   "Category": "Frozen Food",
+   "SKU": "FRO-003",
+   "Product": "Frozen Pizza Margherita",
+   "Rev": 323669.01,
+   "GM": 112334.92,
+   "Vol": 59048,
+   "Margin%": 34.71,
+   "Target": 35,
+   "Gap": -0.29
+  },
+  {
+   "Category": "Beverages",
+   "SKU": "BEV-001",
+   "Product": "Premium Orange Juice 1L",
+   "Rev": 187645.23,
+   "GM": 78383.25,
+   "Vol": 58706,
+   "Margin%": 41.77,
+   "Target": 42,
+   "Gap": -0.23
+  },
+  {
+   "Category": "Dry Goods",
+   "SKU": "DRY-001",
+   "Product": "Whole Wheat Pasta 500g",
+   "Rev": 101843.84,
+   "GM": 48667.65,
+   "Vol": 56514,
+   "Margin%": 47.79,
+   "Target": 48,
+   "Gap": -0.21
+  },
+  {
+   "Category": "Beverages",
+   "SKU": "BEV-005",
+   "Product": "Iced Tea Peach 500ml",
+   "Rev": 128320.79,
+   "GM": 53631.59,
+   "Vol": 58381,
+   "Margin%": 41.79,
+   "Target": 42,
+   "Gap": -0.21
+  },
+  {
+   "Category": "Frozen Food",
+   "SKU": "FRO-002",
+   "Product": "Vanilla Ice Cream 500ml",
+   "Rev": 283880.19,
+   "GM": 98877.59,
+   "Vol": 59224,
+   "Margin%": 34.83,
+   "Target": 35,
+   "Gap": -0.17
+  },
+  {
+   "Category": "Fresh Produce",
+   "SKU": "FRE-003",
+   "Product": "Avocados Pack of 3",
+   "Rev": 252321.17,
+   "GM": 75335.2,
+   "Vol": 56112,
+   "Margin%": 29.86,
+   "Target": 30,
+   "Gap": -0.14
+  },
+  {
+   "Category": "Dry Goods",
+   "SKU": "DRY-005",
+   "Product": "Dark Chocolate 200g",
+   "Rev": 228567.46,
+   "GM": 109415.62,
+   "Vol": 58629,
+   "Margin%": 47.87,
+   "Target": 48,
+   "Gap": -0.13
+  },
+  {
+   "Category": "Beverages",
+   "SKU": "BEV-004",
+   "Product": "Organic Apple Juice 750ml",
+   "Rev": 237492.82,
+   "GM": 99504.14,
+   "Vol": 57949,
+   "Margin%": 41.9,
+   "Target": 42,
+   "Gap": -0.1
+  },
+  {
+   "Category": "Frozen Food",
+   "SKU": "FRO-001",
+   "Product": "Mixed Vegetables 1kg",
+   "Rev": 209080.51,
+   "GM": 72974.1,
+   "Vol": 59705,
+   "Margin%": 34.9,
+   "Target": 35,
+   "Gap": -0.1
+  },
+  {
+   "Category": "Dry Goods",
+   "SKU": "DRY-004",
+   "Product": "Organic Granola 500g",
+   "Rev": 317058.69,
+   "GM": 152009.78,
+   "Vol": 57684,
+   "Margin%": 47.94,
+   "Target": 48,
+   "Gap": -0.06
+  },
+  {
+   "Category": "Frozen Food",
+   "SKU": "FRO-004",
+   "Product": "Fish Fingers Pack of 10",
+   "Rev": 246492.16,
+   "GM": 86186.05,
+   "Vol": 58755,
+   "Margin%": 34.97,
+   "Target": 35,
+   "Gap": -0.03
+  }
+ ],
+ "monthly": [
+  {
+   "Year": 2023,
+   "Month": 1,
+   "Rev": 199911.53,
+   "GM": 76934.04,
+   "Margin%": 38.48
+  },
+  {
+   "Year": 2023,
+   "Month": 2,
+   "Rev": 160751.94,
+   "GM": 62456.22,
+   "Margin%": 38.85
+  },
+  {
+   "Year": 2023,
+   "Month": 3,
+   "Rev": 165733.07,
+   "GM": 63669.75,
+   "Margin%": 38.42
+  },
+  {
+   "Year": 2023,
+   "Month": 4,
+   "Rev": 173608.19,
+   "GM": 67034.41,
+   "Margin%": 38.61
+  },
+  {
+   "Year": 2023,
+   "Month": 5,
+   "Rev": 216774.02,
+   "GM": 83837.83,
+   "Margin%": 38.68
+  },
+  {
+   "Year": 2023,
+   "Month": 6,
+   "Rev": 179604.96,
+   "GM": 69410.66,
+   "Margin%": 38.65
+  },
+  {
+   "Year": 2023,
+   "Month": 7,
+   "Rev": 227181.19,
+   "GM": 87151.93,
+   "Margin%": 38.36
+  },
+  {
+   "Year": 2023,
+   "Month": 8,
+   "Rev": 183104.31,
+   "GM": 70196.24,
+   "Margin%": 38.34
+  },
+  {
+   "Year": 2023,
+   "Month": 9,
+   "Rev": 171843.07,
+   "GM": 67107.44,
+   "Margin%": 39.05
+  },
+  {
+   "Year": 2023,
+   "Month": 10,
+   "Rev": 211968.63,
+   "GM": 82882.36,
+   "Margin%": 39.1
+  },
+  {
+   "Year": 2023,
+   "Month": 11,
+   "Rev": 168986.29,
+   "GM": 66380.38,
+   "Margin%": 39.28
+  },
+  {
+   "Year": 2023,
+   "Month": 12,
+   "Rev": 181909.15,
+   "GM": 71541.43,
+   "Margin%": 39.33
+  },
+  {
+   "Year": 2024,
+   "Month": 1,
+   "Rev": 206997.87,
+   "GM": 79502.5,
+   "Margin%": 38.41
+  },
+  {
+   "Year": 2024,
+   "Month": 2,
+   "Rev": 162193.37,
+   "GM": 63004.69,
+   "Margin%": 38.85
+  },
+  {
+   "Year": 2024,
+   "Month": 3,
+   "Rev": 165723.82,
+   "GM": 64147.01,
+   "Margin%": 38.71
+  },
+  {
+   "Year": 2024,
+   "Month": 4,
+   "Rev": 228217.31,
+   "GM": 88356.38,
+   "Margin%": 38.72
+  },
+  {
+   "Year": 2024,
+   "Month": 5,
+   "Rev": 180117.55,
+   "GM": 69275.74,
+   "Margin%": 38.46
+  },
+  {
+   "Year": 2024,
+   "Month": 6,
+   "Rev": 174886.91,
+   "GM": 67710.41,
+   "Margin%": 38.72
+  },
+  {
+   "Year": 2024,
+   "Month": 7,
+   "Rev": 235199.85,
+   "GM": 90170.56,
+   "Margin%": 38.34
+  },
+  {
+   "Year": 2024,
+   "Month": 8,
+   "Rev": 192090.93,
+   "GM": 73887.16,
+   "Margin%": 38.46
+  },
+  {
+   "Year": 2024,
+   "Month": 9,
+   "Rev": 224114.93,
+   "GM": 87493.07,
+   "Margin%": 39.04
+  },
+  {
+   "Year": 2024,
+   "Month": 10,
+   "Rev": 174938.68,
+   "GM": 67760.18,
+   "Margin%": 38.73
+  },
+  {
+   "Year": 2024,
+   "Month": 11,
+   "Rev": 179847.69,
+   "GM": 70132.89,
+   "Margin%": 39.0
+  },
+  {
+   "Year": 2024,
+   "Month": 12,
+   "Rev": 238712.64,
+   "GM": 93540.73,
+   "Margin%": 39.19
+  }
+ ],
+ "seasonal_index": [
+  {
+   "Month": 1,
+   "Beverages": 90.0,
+   "Dry Goods": 105.0,
+   "Fresh Produce": 99.0,
+   "Frozen Food": 122.0
+  },
+  {
+   "Month": 2,
+   "Beverages": 74.0,
+   "Dry Goods": 85.0,
+   "Fresh Produce": 81.0,
+   "Frozen Food": 91.0
+  },
+  {
+   "Month": 3,
+   "Beverages": 81.0,
+   "Dry Goods": 85.0,
+   "Fresh Produce": 89.0,
+   "Frozen Food": 89.0
+  },
+  {
+   "Month": 4,
+   "Beverages": 102.0,
+   "Dry Goods": 107.0,
+   "Fresh Produce": 109.0,
+   "Frozen Food": 101.0
+  },
+  {
+   "Month": 5,
+   "Beverages": 109.0,
+   "Dry Goods": 103.0,
+   "Fresh Produce": 111.0,
+   "Frozen Food": 95.0
+  },
+  {
+   "Month": 6,
+   "Beverages": 104.0,
+   "Dry Goods": 92.0,
+   "Fresh Produce": 104.0,
+   "Frozen Food": 77.0
+  },
+  {
+   "Month": 7,
+   "Beverages": 136.0,
+   "Dry Goods": 106.0,
+   "Fresh Produce": 124.0,
+   "Frozen Food": 122.0
+  },
+  {
+   "Month": 8,
+   "Beverages": 105.0,
+   "Dry Goods": 87.0,
+   "Fresh Produce": 103.0,
+   "Frozen Food": 100.0
+  },
+  {
+   "Month": 9,
+   "Beverages": 109.0,
+   "Dry Goods": 106.0,
+   "Fresh Produce": 101.0,
+   "Frozen Food": 98.0
+  },
+  {
+   "Month": 10,
+   "Beverages": 92.0,
+   "Dry Goods": 106.0,
+   "Fresh Produce": 98.0,
+   "Frozen Food": 103.0
+  },
+  {
+   "Month": 11,
+   "Beverages": 83.0,
+   "Dry Goods": 100.0,
+   "Fresh Produce": 85.0,
+   "Frozen Food": 92.0
+  },
+  {
+   "Month": 12,
+   "Beverages": 115.0,
+   "Dry Goods": 117.0,
+   "Fresh Produce": 96.0,
+   "Frozen Food": 110.0
+  }
+ ],
+ "seasonal_amp": {
+  "Beverages": 62.0,
+  "Frozen Food": 45.0,
+  "Fresh Produce": 43.0,
+  "Dry Goods": 32.0
+ },
+ "channel": [
+  {
+   "Channel": "Brick & Mortar",
+   "2023": 1732094.12,
+   "2024": 1828943.28,
+   "Growth%": 5.59
+  },
+  {
+   "Channel": "Online",
+   "2023": 509282.23,
+   "2024": 534098.27,
+   "Growth%": 4.87
+  }
+ ],
+ "scenario": {
+  "online": 534098.27,
+  "conv": 384065.1,
+  "d_online": 106819.65400000001,
+  "d_conv": -38406.51,
+  "net": 68413.144,
+  "base": 2363041.5500000003,
+  "newtot": 2431454.694
+ },
+ "bridge": {
+  "vol_eff": -226226.90586474,
+  "price_eff": -320.55413526057555,
+  "total": -226547.4600000009,
+  "bvol": 1213278,
+  "avol": 1156462,
+  "bp": 3.9817464422828075,
+  "ap": 3.981469257096212
+ },
+ "target_2025": {
+  "r24": 2363041.5500000003,
+  "need_pct": 0.05795854499469111
+ },
+ "fx": {
+  "gbp_min": 0.8312,
+  "gbp_max": 0.8828,
+  "uk_rev": 1244090.66,
+  "uk_share": 0.27019499250925944
+ },
+ "monthly_cat_margin": [
+  {
+   "Year": 2023,
+   "Month": 1,
+   "Category": "Beverages",
+   "Rev": 28549.11,
+   "GM": 11943.62,
+   "Margin%": 41.84
+  },
+  {
+   "Year": 2023,
+   "Month": 1,
+   "Category": "Dry Goods",
+   "Rev": 57197.77,
+   "GM": 27314.22,
+   "Margin%": 47.75
+  },
+  {
+   "Year": 2023,
+   "Month": 1,
+   "Category": "Fresh Produce",
+   "Rev": 44098.53,
+   "GM": 13221.49,
+   "Margin%": 29.98
+  },
+  {
+   "Year": 2023,
+   "Month": 1,
+   "Category": "Frozen Food",
+   "Rev": 70066.12,
+   "GM": 24454.71,
+   "Margin%": 34.9
+  },
+  {
+   "Year": 2023,
+   "Month": 2,
+   "Category": "Beverages",
+   "Rev": 24350.48,
+   "GM": 10186.57,
+   "Margin%": 41.83
+  },
+  {
+   "Year": 2023,
+   "Month": 2,
+   "Category": "Dry Goods",
+   "Rev": 46331.3,
+   "GM": 22140.88,
+   "Margin%": 47.79
+  },
+  {
+   "Year": 2023,
+   "Month": 2,
+   "Category": "Fresh Produce",
+   "Rev": 36755.03,
+   "GM": 11262.79,
+   "Margin%": 30.64
+  },
+  {
+   "Year": 2023,
+   "Month": 2,
+   "Category": "Frozen Food",
+   "Rev": 53315.13,
+   "GM": 18865.98,
+   "Margin%": 35.39
+  },
+  {
+   "Year": 2023,
+   "Month": 3,
+   "Category": "Beverages",
+   "Rev": 26815.93,
+   "GM": 11200.2,
+   "Margin%": 41.77
+  },
+  {
+   "Year": 2023,
+   "Month": 3,
+   "Category": "Dry Goods",
+   "Rev": 46016.75,
+   "GM": 22154.53,
+   "Margin%": 48.14
+  },
+  {
+   "Year": 2023,
+   "Month": 3,
+   "Category": "Fresh Produce",
+   "Rev": 40672.0,
+   "GM": 12263.31,
+   "Margin%": 30.15
+  },
+  {
+   "Year": 2023,
+   "Month": 3,
+   "Category": "Frozen Food",
+   "Rev": 52228.39,
+   "GM": 18051.71,
+   "Margin%": 34.56
+  },
+  {
+   "Year": 2023,
+   "Month": 4,
+   "Category": "Beverages",
+   "Rev": 29606.99,
+   "GM": 12444.42,
+   "Margin%": 42.03
+  },
+  {
+   "Year": 2023,
+   "Month": 4,
+   "Category": "Dry Goods",
+   "Rev": 49915.23,
+   "GM": 24011.11,
+   "Margin%": 48.1
+  },
+  {
+   "Year": 2023,
+   "Month": 4,
+   "Category": "Fresh Produce",
+   "Rev": 43584.67,
+   "GM": 13021.95,
+   "Margin%": 29.88
+  },
+  {
+   "Year": 2023,
+   "Month": 4,
+   "Category": "Frozen Food",
+   "Rev": 50501.3,
+   "GM": 17556.93,
+   "Margin%": 34.77
+  },
+  {
+   "Year": 2023,
+   "Month": 5,
+   "Category": "Beverages",
+   "Rev": 37858.09,
+   "GM": 15863.44,
+   "Margin%": 41.9
+  },
+  {
+   "Year": 2023,
+   "Month": 5,
+   "Category": "Dry Goods",
+   "Rev": 63552.14,
+   "GM": 30512.7,
+   "Margin%": 48.01
+  },
+  {
+   "Year": 2023,
+   "Month": 5,
+   "Category": "Fresh Produce",
+   "Rev": 56178.68,
+   "GM": 16863.01,
+   "Margin%": 30.02
+  },
+  {
+   "Year": 2023,
+   "Month": 5,
+   "Category": "Frozen Food",
+   "Rev": 59185.11,
+   "GM": 20598.68,
+   "Margin%": 34.8
+  },
+  {
+   "Year": 2023,
+   "Month": 6,
+   "Category": "Beverages",
+   "Rev": 34378.01,
+   "GM": 14474.95,
+   "Margin%": 42.11
+  },
+  {
+   "Year": 2023,
+   "Month": 6,
+   "Category": "Dry Goods",
+   "Rev": 51422.07,
+   "GM": 24592.46,
+   "Margin%": 47.82
+  },
+  {
+   "Year": 2023,
+   "Month": 6,
+   "Category": "Fresh Produce",
+   "Rev": 48735.26,
+   "GM": 14669.75,
+   "Margin%": 30.1
+  },
+  {
+   "Year": 2023,
+   "Month": 6,
+   "Category": "Frozen Food",
+   "Rev": 45069.62,
+   "GM": 15673.5,
+   "Margin%": 34.78
+  },
+  {
+   "Year": 2023,
+   "Month": 7,
+   "Category": "Beverages",
+   "Rev": 45714.22,
+   "GM": 19318.42,
+   "Margin%": 42.26
+  },
+  {
+   "Year": 2023,
+   "Month": 7,
+   "Category": "Dry Goods",
+   "Rev": 55022.43,
+   "GM": 26364.63,
+   "Margin%": 47.92
+  },
+  {
+   "Year": 2023,
+   "Month": 7,
+   "Category": "Fresh Produce",
+   "Rev": 52664.8,
+   "GM": 15693.21,
+   "Margin%": 29.8
+  },
+  {
+   "Year": 2023,
+   "Month": 7,
+   "Category": "Frozen Food",
+   "Rev": 73779.74,
+   "GM": 25775.67,
+   "Margin%": 34.94
+  },
+  {
+   "Year": 2023,
+   "Month": 8,
+   "Category": "Beverages",
+   "Rev": 35637.91,
+   "GM": 15036.85,
+   "Margin%": 42.19
+  },
+  {
+   "Year": 2023,
+   "Month": 8,
+   "Category": "Dry Goods",
+   "Rev": 44024.77,
+   "GM": 21163.2,
+   "Margin%": 48.07
+  },
+  {
+   "Year": 2023,
+   "Month": 8,
+   "Category": "Fresh Produce",
+   "Rev": 44890.99,
+   "GM": 13442.15,
+   "Margin%": 29.94
+  },
+  {
+   "Year": 2023,
+   "Month": 8,
+   "Category": "Frozen Food",
+   "Rev": 58550.64,
+   "GM": 20554.04,
+   "Margin%": 35.1
+  },
+  {
+   "Year": 2023,
+   "Month": 9,
+   "Category": "Beverages",
+   "Rev": 31533.01,
+   "GM": 13294.23,
+   "Margin%": 42.16
+  },
+  {
+   "Year": 2023,
+   "Month": 9,
+   "Category": "Dry Goods",
+   "Rev": 49062.39,
+   "GM": 23633.45,
+   "Margin%": 48.17
+  },
+  {
+   "Year": 2023,
+   "Month": 9,
+   "Category": "Fresh Produce",
+   "Rev": 39693.7,
+   "GM": 12124.7,
+   "Margin%": 30.55
+  },
+  {
+   "Year": 2023,
+   "Month": 9,
+   "Category": "Frozen Food",
+   "Rev": 51553.97,
+   "GM": 18055.06,
+   "Margin%": 35.02
+  },
+  {
+   "Year": 2023,
+   "Month": 10,
+   "Category": "Beverages",
+   "Rev": 33942.31,
+   "GM": 14351.59,
+   "Margin%": 42.28
+  },
+  {
+   "Year": 2023,
+   "Month": 10,
+   "Category": "Dry Goods",
+   "Rev": 64336.39,
+   "GM": 30830.09,
+   "Margin%": 47.92
+  },
+  {
+   "Year": 2023,
+   "Month": 10,
+   "Category": "Fresh Produce",
+   "Rev": 47315.42,
+   "GM": 14301.13,
+   "Margin%": 30.23
+  },
+  {
+   "Year": 2023,
+   "Month": 10,
+   "Category": "Frozen Food",
+   "Rev": 66374.51,
+   "GM": 23399.55,
+   "Margin%": 35.25
+  },
+  {
+   "Year": 2023,
+   "Month": 11,
+   "Category": "Beverages",
+   "Rev": 26224.06,
+   "GM": 10993.3,
+   "Margin%": 41.92
+  },
+  {
+   "Year": 2023,
+   "Month": 11,
+   "Category": "Dry Goods",
+   "Rev": 54725.37,
+   "GM": 26421.79,
+   "Margin%": 48.28
+  },
+  {
+   "Year": 2023,
+   "Month": 11,
+   "Category": "Fresh Produce",
+   "Rev": 35132.12,
+   "GM": 10588.28,
+   "Margin%": 30.14
+  },
+  {
+   "Year": 2023,
+   "Month": 11,
+   "Category": "Frozen Food",
+   "Rev": 52904.74,
+   "GM": 18377.01,
+   "Margin%": 34.74
+  },
+  {
+   "Year": 2023,
+   "Month": 12,
+   "Category": "Beverages",
+   "Rev": 32653.35,
+   "GM": 13650.45,
+   "Margin%": 41.8
+  },
+  {
+   "Year": 2023,
+   "Month": 12,
+   "Category": "Dry Goods",
+   "Rev": 55653.45,
+   "GM": 26765.85,
+   "Margin%": 48.09
+  },
+  {
+   "Year": 2023,
+   "Month": 12,
+   "Category": "Fresh Produce",
+   "Rev": 36864.6,
+   "GM": 11106.6,
+   "Margin%": 30.13
+  },
+  {
+   "Year": 2023,
+   "Month": 12,
+   "Category": "Frozen Food",
+   "Rev": 56737.75,
+   "GM": 20018.53,
+   "Margin%": 35.28
+  },
+  {
+   "Year": 2024,
+   "Month": 1,
+   "Category": "Beverages",
+   "Rev": 31605.27,
+   "GM": 13230.81,
+   "Margin%": 41.86
+  },
+  {
+   "Year": 2024,
+   "Month": 1,
+   "Category": "Dry Goods",
+   "Rev": 57580.87,
+   "GM": 27609.65,
+   "Margin%": 47.95
+  },
+  {
+   "Year": 2024,
+   "Month": 1,
+   "Category": "Fresh Produce",
+   "Rev": 43880.38,
+   "GM": 13059.01,
+   "Margin%": 29.76
+  },
+  {
+   "Year": 2024,
+   "Month": 1,
+   "Category": "Frozen Food",
+   "Rev": 73931.35,
+   "GM": 25603.03,
+   "Margin%": 34.63
+  },
+  {
+   "Year": 2024,
+   "Month": 2,
+   "Category": "Beverages",
+   "Rev": 24996.56,
+   "GM": 10544.3,
+   "Margin%": 42.18
+  },
+  {
+   "Year": 2024,
+   "Month": 2,
+   "Category": "Dry Goods",
+   "Rev": 46796.57,
+   "GM": 22248.69,
+   "Margin%": 47.54
+  },
+  {
+   "Year": 2024,
+   "Month": 2,
+   "Category": "Fresh Produce",
+   "Rev": 35925.97,
+   "GM": 10999.53,
+   "Margin%": 30.62
+  },
+  {
+   "Year": 2024,
+   "Month": 2,
+   "Category": "Frozen Food",
+   "Rev": 54474.27,
+   "GM": 19212.17,
+   "Margin%": 35.27
+  },
+  {
+   "Year": 2024,
+   "Month": 3,
+   "Category": "Beverages",
+   "Rev": 27243.59,
+   "GM": 11469.2,
+   "Margin%": 42.1
+  },
+  {
+   "Year": 2024,
+   "Month": 3,
+   "Category": "Dry Goods",
+   "Rev": 46897.95,
+   "GM": 22554.48,
+   "Margin%": 48.09
+  },
+  {
+   "Year": 2024,
+   "Month": 3,
+   "Category": "Fresh Produce",
+   "Rev": 38693.36,
+   "GM": 11649.65,
+   "Margin%": 30.11
+  },
+  {
+   "Year": 2024,
+   "Month": 3,
+   "Category": "Frozen Food",
+   "Rev": 52888.92,
+   "GM": 18473.68,
+   "Margin%": 34.93
+  },
+  {
+   "Year": 2024,
+   "Month": 4,
+   "Category": "Beverages",
+   "Rev": 38811.64,
+   "GM": 16252.73,
+   "Margin%": 41.88
+  },
+  {
+   "Year": 2024,
+   "Month": 4,
+   "Category": "Dry Goods",
+   "Rev": 67181.93,
+   "GM": 32313.92,
+   "Margin%": 48.1
+  },
+  {
+   "Year": 2024,
+   "Month": 4,
+   "Category": "Fresh Produce",
+   "Rev": 53643.27,
+   "GM": 16078.52,
+   "Margin%": 29.97
+  },
+  {
+   "Year": 2024,
+   "Month": 4,
+   "Category": "Frozen Food",
+   "Rev": 68580.47,
+   "GM": 23711.21,
+   "Margin%": 34.57
+  },
+  {
+   "Year": 2024,
+   "Month": 5,
+   "Category": "Beverages",
+   "Rev": 34717.21,
+   "GM": 14359.02,
+   "Margin%": 41.36
+  },
+  {
+   "Year": 2024,
+   "Month": 5,
+   "Category": "Dry Goods",
+   "Rev": 49622.43,
+   "GM": 23607.94,
+   "Margin%": 47.58
+  },
+  {
+   "Year": 2024,
+   "Month": 5,
+   "Category": "Fresh Produce",
+   "Rev": 43063.99,
+   "GM": 13015.47,
+   "Margin%": 30.22
+  },
+  {
+   "Year": 2024,
+   "Month": 5,
+   "Category": "Frozen Food",
+   "Rev": 52713.92,
+   "GM": 18293.31,
+   "Margin%": 34.7
+  },
+  {
+   "Year": 2024,
+   "Month": 6,
+   "Category": "Beverages",
+   "Rev": 35394.37,
+   "GM": 14859.32,
+   "Margin%": 41.98
+  },
+  {
+   "Year": 2024,
+   "Month": 6,
+   "Category": "Dry Goods",
+   "Rev": 48722.55,
+   "GM": 23530.87,
+   "Margin%": 48.3
+  },
+  {
+   "Year": 2024,
+   "Month": 6,
+   "Category": "Fresh Produce",
+   "Rev": 44282.29,
+   "GM": 13155.1,
+   "Margin%": 29.71
+  },
+  {
+   "Year": 2024,
+   "Month": 6,
+   "Category": "Frozen Food",
+   "Rev": 46487.7,
+   "GM": 16165.12,
+   "Margin%": 34.77
+  },
+  {
+   "Year": 2024,
+   "Month": 7,
+   "Category": "Beverages",
+   "Rev": 45320.56,
+   "GM": 18870.79,
+   "Margin%": 41.64
+  },
+  {
+   "Year": 2024,
+   "Month": 7,
+   "Category": "Dry Goods",
+   "Rev": 61435.19,
+   "GM": 29314.9,
+   "Margin%": 47.72
+  },
+  {
+   "Year": 2024,
+   "Month": 7,
+   "Category": "Fresh Produce",
+   "Rev": 57748.39,
+   "GM": 17461.85,
+   "Margin%": 30.24
+  },
+  {
+   "Year": 2024,
+   "Month": 7,
+   "Category": "Frozen Food",
+   "Rev": 70695.71,
+   "GM": 24523.02,
+   "Margin%": 34.69
+  },
+  {
+   "Year": 2024,
+   "Month": 8,
+   "Category": "Beverages",
+   "Rev": 34458.26,
+   "GM": 14569.75,
+   "Margin%": 42.28
+  },
+  {
+   "Year": 2024,
+   "Month": 8,
+   "Category": "Dry Goods",
+   "Rev": 51085.5,
+   "GM": 24565.97,
+   "Margin%": 48.09
+  },
+  {
+   "Year": 2024,
+   "Month": 8,
+   "Category": "Fresh Produce",
+   "Rev": 47405.31,
+   "GM": 14194.22,
+   "Margin%": 29.94
+  },
+  {
+   "Year": 2024,
+   "Month": 8,
+   "Category": "Frozen Food",
+   "Rev": 59141.86,
+   "GM": 20557.22,
+   "Margin%": 34.76
+  },
+  {
+   "Year": 2024,
+   "Month": 9,
+   "Category": "Beverages",
+   "Rev": 41532.96,
+   "GM": 17394.46,
+   "Margin%": 41.88
+  },
+  {
+   "Year": 2024,
+   "Month": 9,
+   "Category": "Dry Goods",
+   "Rev": 67310.71,
+   "GM": 32317.63,
+   "Margin%": 48.01
+  },
+  {
+   "Year": 2024,
+   "Month": 9,
+   "Category": "Fresh Produce",
+   "Rev": 50532.19,
+   "GM": 15169.39,
+   "Margin%": 30.02
+  },
+  {
+   "Year": 2024,
+   "Month": 9,
+   "Category": "Frozen Food",
+   "Rev": 64739.07,
+   "GM": 22611.59,
+   "Margin%": 34.93
+  },
+  {
+   "Year": 2024,
+   "Month": 10,
+   "Category": "Beverages",
+   "Rev": 27475.0,
+   "GM": 11616.33,
+   "Margin%": 42.28
+  },
+  {
+   "Year": 2024,
+   "Month": 10,
+   "Category": "Dry Goods",
+   "Rev": 51971.15,
+   "GM": 24922.09,
+   "Margin%": 47.95
+  },
+  {
+   "Year": 2024,
+   "Month": 10,
+   "Category": "Fresh Produce",
+   "Rev": 40108.72,
+   "GM": 11979.62,
+   "Margin%": 29.87
+  },
+  {
+   "Year": 2024,
+   "Month": 10,
+   "Category": "Frozen Food",
+   "Rev": 55383.81,
+   "GM": 19242.14,
+   "Margin%": 34.74
+  },
+  {
+   "Year": 2024,
+   "Month": 11,
+   "Category": "Beverages",
+   "Rev": 29137.81,
+   "GM": 12211.04,
+   "Margin%": 41.91
+  },
+  {
+   "Year": 2024,
+   "Month": 11,
+   "Category": "Dry Goods",
+   "Rev": 54670.82,
+   "GM": 26395.6,
+   "Margin%": 48.28
+  },
+  {
+   "Year": 2024,
+   "Month": 11,
+   "Category": "Fresh Produce",
+   "Rev": 40651.88,
+   "GM": 12171.32,
+   "Margin%": 29.94
+  },
+  {
+   "Year": 2024,
+   "Month": 11,
+   "Category": "Frozen Food",
+   "Rev": 55387.18,
+   "GM": 19354.93,
+   "Margin%": 34.94
+  },
+  {
+   "Year": 2024,
+   "Month": 12,
+   "Category": "Beverages",
+   "Rev": 44244.15,
+   "GM": 18501.32,
+   "Margin%": 41.82
+  },
+  {
+   "Year": 2024,
+   "Month": 12,
+   "Category": "Dry Goods",
+   "Rev": 72353.21,
+   "GM": 34776.47,
+   "Margin%": 48.06
+  },
+  {
+   "Year": 2024,
+   "Month": 12,
+   "Category": "Fresh Produce",
+   "Rev": 49144.76,
+   "GM": 14902.74,
+   "Margin%": 30.32
+  },
+  {
+   "Year": 2024,
+   "Month": 12,
+   "Category": "Frozen Food",
+   "Rev": 72970.52,
+   "GM": 25360.2,
+   "Margin%": 34.75
+  }
+ ],
+ "cat_country": [
+  {
+   "Category": "Beverages",
+   "Country": "France",
+   "Revenue": 316001.38
+  },
+  {
+   "Category": "Beverages",
+   "Country": "Germany",
+   "Revenue": 270464.99
+  },
+  {
+   "Category": "Beverages",
+   "Country": "UK",
+   "Revenue": 215734.48
+  },
+  {
+   "Category": "Dry Goods",
+   "Country": "France",
+   "Revenue": 511476.0
+  },
+  {
+   "Category": "Dry Goods",
+   "Country": "Germany",
+   "Revenue": 446921.6
+  },
+  {
+   "Category": "Dry Goods",
+   "Country": "UK",
+   "Revenue": 354491.34
+  },
+  {
+   "Category": "Fresh Produce",
+   "Country": "France",
+   "Revenue": 427455.41
+  },
+  {
+   "Category": "Fresh Produce",
+   "Country": "Germany",
+   "Revenue": 354239.6
+  },
+  {
+   "Category": "Fresh Produce",
+   "Country": "UK",
+   "Revenue": 289971.3
+  },
+  {
+   "Category": "Frozen Food",
+   "Country": "France",
+   "Revenue": 562506.88
+  },
+  {
+   "Category": "Frozen Food",
+   "Country": "Germany",
+   "Revenue": 471261.38
+  },
+  {
+   "Category": "Frozen Food",
+   "Country": "UK",
+   "Revenue": 383893.54
+  }
+ ],
+ "matrix_cat_country": [
+  {
+   "Category": "Beverages",
+   "Country": "France",
+   "Rev": 316001.38,
+   "COGS": 183443.76,
+   "GM": 132557.62,
+   "Margin%": 41.95
+  },
+  {
+   "Category": "Beverages",
+   "Country": "Germany",
+   "Rev": 270464.99,
+   "COGS": 157068.45,
+   "GM": 113396.54,
+   "Margin%": 41.93
+  },
+  {
+   "Category": "Beverages",
+   "Country": "UK",
+   "Rev": 215734.48,
+   "COGS": 125051.53,
+   "GM": 90682.95,
+   "Margin%": 42.03
+  },
+  {
+   "Category": "Dry Goods",
+   "Country": "France",
+   "Rev": 511476.0,
+   "COGS": 265588.07,
+   "GM": 245887.93,
+   "Margin%": 48.07
+  },
+  {
+   "Category": "Dry Goods",
+   "Country": "Germany",
+   "Rev": 446921.6,
+   "COGS": 232677.47,
+   "GM": 214244.13,
+   "Margin%": 47.94
+  },
+  {
+   "Category": "Dry Goods",
+   "Country": "UK",
+   "Rev": 354491.34,
+   "COGS": 184560.28,
+   "GM": 169931.06,
+   "Margin%": 47.94
+  },
+  {
+   "Category": "Fresh Produce",
+   "Country": "France",
+   "Rev": 427455.41,
+   "COGS": 298782.49,
+   "GM": 128672.92,
+   "Margin%": 30.1
+  },
+  {
+   "Category": "Fresh Produce",
+   "Country": "Germany",
+   "Rev": 354239.6,
+   "COGS": 247547.72,
+   "GM": 106691.88,
+   "Margin%": 30.12
+  },
+  {
+   "Category": "Fresh Produce",
+   "Country": "UK",
+   "Rev": 289971.3,
+   "COGS": 202941.31,
+   "GM": 87029.99,
+   "Margin%": 30.01
+  },
+  {
+   "Category": "Frozen Food",
+   "Country": "France",
+   "Rev": 562506.88,
+   "COGS": 366302.08,
+   "GM": 196204.8,
+   "Margin%": 34.88
+  },
+  {
+   "Category": "Frozen Food",
+   "Country": "Germany",
+   "Rev": 471261.38,
+   "COGS": 306769.64,
+   "GM": 164491.74,
+   "Margin%": 34.9
+  },
+  {
+   "Category": "Frozen Food",
+   "Country": "UK",
+   "Rev": 383893.54,
+   "COGS": 250101.09,
+   "GM": 133792.45,
+   "Margin%": 34.85
+  }
+ ],
+ "budget": {
+  "act": 4604417.899999999,
+  "bud": 4830965.36,
+  "var": -226547.4600000009,
+  "act24": 2363041.55,
+  "bud24": 2477611.2,
+  "var24": -114569.65000000037,
+  "by_country": [
+   {
+    "Country": "France",
+    "Act": 1817439.67,
+    "Bud": 1903600.88,
+    "Var": -86161.21,
+    "Var%": -4.53
+   },
+   {
+    "Country": "Germany",
+    "Act": 1542887.57,
+    "Bud": 1619064.69,
+    "Var": -76177.12,
+    "Var%": -4.71
+   },
+   {
+    "Country": "UK",
+    "Act": 1244090.66,
+    "Bud": 1308299.79,
+    "Var": -64209.13,
+    "Var%": -4.91
+   }
+  ],
+  "by_category": [
+   {
+    "Category": "Beverages",
+    "Act": 802200.85,
+    "Bud": 842550.06,
+    "Var": -40349.21,
+    "Var%": -4.79
+   },
+   {
+    "Category": "Dry Goods",
+    "Act": 1312888.94,
+    "Bud": 1378921.58,
+    "Var": -66032.64,
+    "Var%": -4.79
+   },
+   {
+    "Category": "Fresh Produce",
+    "Act": 1071666.31,
+    "Bud": 1122677.81,
+    "Var": -51011.5,
+    "Var%": -4.54
+   },
+   {
+    "Category": "Frozen Food",
+    "Act": 1417661.8,
+    "Bud": 1486815.91,
+    "Var": -69154.11,
+    "Var%": -4.65
+   }
+  ]
+ }
+}

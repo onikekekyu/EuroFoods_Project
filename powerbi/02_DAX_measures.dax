@@ -1,0 +1,133 @@
+// ===================================================================
+//  EuroFoods S.A. — Complete DAX Measure Library
+//  Create a measures table first:  Modeling > New Table >  _Measures = {BLANK()}
+//  Then paste each measure (New Measure). Comments show the EXPECTED
+//  value on the full, unfiltered dataset so you can self-check.
+// ===================================================================
+
+// ----------------------------------------------------------------
+//  1 · CORE FINANCIAL MEASURES   (fact = Transactions)
+// ----------------------------------------------------------------
+Total Revenue = SUM ( Transactions[Revenue] )                       // €4,604,418
+Total COGS    = SUM ( Transactions[COGS] )                          // €2,820,834
+Gross Margin  = [Total Revenue] - [Total COGS]                      // €1,783,584
+Margin %      = DIVIDE ( [Gross Margin], [Total Revenue], 0 )       // 38.7%
+Total Volume  = SUM ( Transactions[Volume] )                        // 1,156,462 units
+Avg Unit Price = DIVIDE ( [Total Revenue], [Total Volume], 0 )      // €3.98
+
+// ----------------------------------------------------------------
+//  2 · YEAR-OVER-YEAR  (requires Calendar marked as a Date table)
+// ----------------------------------------------------------------
+Revenue PY =
+CALCULATE ( [Total Revenue], SAMEPERIODLASTYEAR ( Calendar[Date] ) )
+
+YoY Growth =                                                        // 2024 vs 2023 = +5.4%
+DIVIDE ( [Total Revenue] - [Revenue PY], [Revenue PY], 0 )
+
+YoY Growth Abs = [Total Revenue] - [Revenue PY]                     // +€121,665 (2024)
+
+Margin PY =
+CALCULATE ( [Margin %], SAMEPERIODLASTYEAR ( Calendar[Date] ) )
+
+Margin Change = [Margin %] - [Margin PY]                           // ~ -0.1pp (flat)
+
+// ----------------------------------------------------------------
+//  3 · BUDGET VARIANCE   (table = Actuals_vs_Budget)
+// ----------------------------------------------------------------
+Budget Revenue          = SUM ( Actuals_vs_Budget[Budget_Revenue] )     // €4,830,965
+Actual Revenue (Monthly)= SUM ( Actuals_vs_Budget[Actual_Revenue] )     // €4,604,418
+Revenue Variance        = [Actual Revenue (Monthly)] - [Budget Revenue] // -€226,547
+Variance %              = DIVIDE ( [Revenue Variance], [Budget Revenue], 0 ) // -4.7%
+
+Budget COGS    = SUM ( Actuals_vs_Budget[Budget_COGS] )
+COGS Variance  = SUM ( Actuals_vs_Budget[Actual_COGS] ) - [Budget COGS]
+Budget Margin  = [Budget Revenue] - [Budget COGS]
+Budget Margin %= DIVIDE ( [Budget Margin], [Budget Revenue], 0 )
+
+Budget Volume    = SUM ( Actuals_vs_Budget[Budget_Volume] )             // 1,213,278
+Volume Variance  = SUM ( Actuals_vs_Budget[Actual_Volume] ) - [Budget Volume]   // -56,816
+Volume Variance %= DIVIDE ( [Volume Variance], [Budget Volume], 0 )     // -4.7%
+
+//  Price–Volume bridge: isolates WHY we missed budget.
+//  The whole miss is volume; price effect is ~€0  ->  over-optimistic unit plan.
+Variance from Volume =
+VAR BudPrice = DIVIDE ( [Budget Revenue], [Budget Volume] )
+RETURN ( SUM ( Actuals_vs_Budget[Actual_Volume] ) - [Budget Volume] ) * BudPrice  // -€226,227
+
+Variance from Price =
+VAR BudPrice = DIVIDE ( [Budget Revenue], [Budget Volume] )
+VAR ActPrice = DIVIDE ( [Actual Revenue (Monthly)], SUM ( Actuals_vs_Budget[Actual_Volume] ) )
+RETURN SUM ( Actuals_vs_Budget[Actual_Volume] ) * ( ActPrice - BudPrice )         // ~ -€321
+
+// ----------------------------------------------------------------
+//  4 · WHAT-IF FORECAST
+//  Modeling > New Parameter > Numeric range:
+//     Name 'Growth Rate', Min -10, Max 20, Default 5, Increment 1
+// ----------------------------------------------------------------
+Forecast Revenue =
+[Total Revenue] * ( 1 + 'Growth Rate'[Growth Rate Value] / 100 )
+
+Forecast Margin =
+[Gross Margin]  * ( 1 + 'Growth Rate'[Growth Rate Value] / 100 )
+
+Forecast FY2025 Revenue =
+VAR Base2024 = CALCULATE ( [Total Revenue], Calendar[Year] = 2024 )
+RETURN Base2024 * ( 1 + 'Growth Rate'[Growth Rate Value] / 100 )         // base €2,363,042
+
+Forecast Scenario Label =
+SWITCH ( TRUE (),
+    'Growth Rate'[Growth Rate Value] >= 10, "Optimistic",
+    'Growth Rate'[Growth Rate Value] >= 0,  "Central",
+    "Pessimistic" )
+
+//  Growth needed to hit a 2025 target (answers analytical Q11)
+Growth to Reach 2.5M =
+VAR Base2024 = CALCULATE ( [Total Revenue], Calendar[Year] = 2024 )
+RETURN DIVIDE ( 2500000 - Base2024, Base2024 )                          // +5.8%
+
+// ----------------------------------------------------------------
+//  5 · SCENARIO SIMULATION  (segment-level shock)
+//  Disconnected table:  Modeling > New Table
+//      Scenario_Rates = DATATABLE("Segment",STRING,"Growth_Rate",DOUBLE,
+//        { {"Hypermarket",0},{"Supermarket",0},{"Convenience",-0.10},{"Online",0.20} })
+// ----------------------------------------------------------------
+Scenario Revenue =
+SUMX (
+    VALUES ( Transactions[Segment] ),
+    VAR seg  = Transactions[Segment]
+    VAR base = CALCULATE ( [Total Revenue], Calendar[Year] = 2024 )
+    VAR rate = LOOKUPVALUE ( Scenario_Rates[Growth_Rate], Scenario_Rates[Segment], seg )
+    RETURN base * ( 1 + rate )
+)                                                                       // ≈ €2,431,455
+
+Scenario Net Impact =
+[Scenario Revenue] - CALCULATE ( [Total Revenue], Calendar[Year] = 2024 ) // +€68,413 (+2.9%)
+
+// ----------------------------------------------------------------
+//  6 · ADVANCED / BONUS
+// ----------------------------------------------------------------
+Country Revenue Share =
+DIVIDE ( [Total Revenue], CALCULATE ( [Total Revenue], ALL ( Transactions[Country] ) ), 0 )
+
+Segment Revenue Share =
+DIVIDE ( [Total Revenue], CALCULATE ( [Total Revenue], ALL ( Transactions[Segment] ) ), 0 )
+
+Cumulative Revenue =                                    // running total within the year
+CALCULATE ( [Total Revenue],
+    FILTER ( ALLEXCEPT ( Calendar, Calendar[Year] ), Calendar[Date] <= MAX ( Calendar[Date] ) ) )
+
+Products Below Target =                                 // count of SKUs under their category target
+VAR t =
+    ADDCOLUMNS ( VALUES ( Products[SKU] ),
+        "@m",   [Margin %],
+        "@tgt", CALCULATE ( SELECTEDVALUE ( Products[Target_Margin_Pct] ) ) / 100 )
+RETURN COUNTROWS ( FILTER ( t, [@m] < [@tgt] ) )        // 11 of 20
+
+Margin vs Target =                                      // signed gap to category target, in pp
+[Margin %] - DIVIDE ( SELECTEDVALUE ( Products[Target_Margin_Pct] ), 100 )
+
+// Dynamic title helper for cards / report headers
+Selected Scope Title =
+"EuroFoods · " &
+SELECTEDVALUE ( Calendar[Year], "FY23–24" ) & " · " &
+SELECTEDVALUE ( Transactions[Country], "All countries" )
